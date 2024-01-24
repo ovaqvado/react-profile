@@ -1,20 +1,16 @@
-import React from "react";
-import ReactDOM from 'react-dom';
+import React from 'react';
+import './Profile.css';
 
-function App() {
-<div className="profile">
-    <h1>Обо мне</h1>
-    <div className="data"></div>
-        <h2>Имя: Кирилл</h2>
-        <h2>Ваш ник: ovaqvado</h2>
-        <h2>Место обучения: Аккадемия TOP, универ, аккадемия Yandex</h2>
-        <h2>Номер телефона: +7-918-999-22-02 <span>По номеру не звонить он не работает</span></h2>
-        <h2>Почта: salamalekym@gmail.com<span>Почта тоже не настоящая</span></h2>
-    </div>
+
+export default function Profile() {
+    return(
+        <div className='info'>
+            <h1>Моя карточка</h1>
+            <h3>Имя: Кирилл</h3>
+            <h3>Ник: ovaqvado</h3>
+            <h3>Почта: hotdog@yahoo.com</h3>
+            <h3>Номер: +7-999-222-00-22</h3>
+            <h3>Хобби: Програмирование</h3>
+        </div>
+    )
 }
-
-
-ReactDOM.render(<App />, document.getElementById('root'));
-
-
-
